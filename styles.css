@@ -1,0 +1,21 @@
+/* Custom Styles para Hotel Granaderos */
+
+/* Desplazamiento suave entre secciones */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ajustes de tipografía o clases de apoyo */
+.font-serif {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Transiciones personalizadas */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sombras suaves para tarjetas */
+.shadow-custom {
+  box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.08);
+}
