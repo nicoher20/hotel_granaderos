@@ -44,8 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `• *Check-in:* ${checkIn}\n` +
         `• *Check-out:* ${checkOut}`;
 
-      // Reemplaza con el número real de WhatsApp del hotel cuando lo tengas
-      const numeroWhatsApp = "5491100000000"; 
+      const numeroWhatsApp = "5491130823712";
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
       window.open(url, "_blank");
