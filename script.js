@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const checkOut = inputs[4].value;
 
       // Mensaje estructurado para WhatsApp
-      const mensaje = `Hola Hotel Granaderos! Me gustaría consultar disponibilidad para una reserva:\n\n` +
+      const mensaje = `Hola Hotel Granaderos! Me gustaría consultar disponibilidad para alguna habitación:\n\n` +
         `• *Nombre:* ${nombre}\n` +
         `• *Contacto:* ${telefono}\n` +
         `• *Habitación:* ${habitacion}\n` +
