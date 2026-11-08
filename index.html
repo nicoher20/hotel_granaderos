@@ -57,13 +57,20 @@
     <!-- SOBRE NOSOTROS -->
     <section id="nosotros" class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Un hotel pensado para descansar</h2>
-            <p class="text-gray-600 mb-4 leading-relaxed">
-              En <strong>Hotel Granaderos</strong> nos enfocamos en brindar un trato cordial, cercano y personalizado. Nos esforzamos por mantener instalaciones limpias, ambientes serenos y un servicio atenta para que cada huésped se sienta cómodo desde el primer momento.
-            </p>
-            <div class="grid grid-cols-2 gap-4 mt-6">
+        <!-- Grilla principal de 2 columnas: Columna izquierda (Texto + Servicios), Columna derecha (Imagen grande) -->
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          
+          <!-- COLUMNA IZQUIERDA -->
+          <div class="space-y-6">
+            <div>
+              <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Un hotel pensado para descansar</h2>
+              <p class="text-gray-600 leading-relaxed">
+                En <strong>Hotel Granaderos</strong> nos enfocamos en brindar un trato cordial, cercano y personalizado. Nos esforzamos por mantener instalaciones limpias, ambientes serenos y un servicio atento para que cada huésped se sienta cómodo desde el primer momento.
+              </p>
+            </div>
+
+            <!-- Bloque superior: Atención Cálida y Tranquilidad -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div class="p-4 rounded-xl bg-amber-50 border border-amber-100">
                 <i data-lucide="heart" class="w-6 h-6 text-amber-600 mb-2"></i>
                 <h4 class="font-bold text-gray-900">Atención Cálida</h4>
@@ -75,32 +82,37 @@
                 <p class="text-xs text-gray-600">Ambiente seguro y adecuado para el descanso.</p>
               </div>
             </div>
+
+            <!-- Bloque inferior: Los 4 servicios en tarjetas verticales -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+              <div class="p-4 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition flex flex-col items-center justify-center min-h-[140px]">
+                <i data-lucide="wifi" class="w-8 h-8 text-amber-600 mb-3"></i>
+                <h4 class="font-bold text-sm text-gray-900">Wi-Fi Libre</h4>
+              </div>
+              <div class="p-4 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition flex flex-col items-center justify-center min-h-[140px]">
+                <i data-lucide="clock" class="w-8 h-8 text-amber-600 mb-3"></i>
+                <h4 class="font-bold text-sm text-gray-900">Recepción</h4>
+              </div>
+              <div class="p-4 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition flex flex-col items-center justify-center min-h-[140px]">
+                <i data-lucide="sparkles" class="w-8 h-8 text-amber-600 mb-3"></i>
+                <h4 class="font-bold text-sm text-gray-900 leading-tight">Limpieza Diaria de pasillos</h4>
+              </div>
+              <div class="p-4 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition flex flex-col items-center justify-center min-h-[140px]">
+                <i data-lucide="camera" class="w-8 h-8 text-amber-600 mb-3"></i>
+                <h4 class="font-bold text-sm text-gray-900 leading-tight">Seguridad de cámaras</h4>
+              </div>
+            </div>
           </div>
-          <br>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          <div class="p-6 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition">
-            <i data-lucide="wifi" class="w-8 h-8 mx-auto text-amber-600 mb-3"></i>
-            <h4 class="font-bold text-sm text-gray-900">Wi-Fi Libre</h4>
+
+          <!-- COLUMNA DERECHA: Imagen grande desplegada -->
+          <div class="h-full w-full flex items-center justify-center">
+            <img src="./img/hotel.png" alt="Hotel Granaderos" class="rounded-3xl shadow-xl border border-amber-100 object-cover w-full h-[450px] lg:h-[520px]">
           </div>
-          <div class="p-6 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition">
-            <i data-lucide="clock" class="w-8 h-8 mx-auto text-amber-600 mb-3"></i>
-            <h4 class="font-bold text-sm text-gray-900">Recepción</h4>
-          </div>
-          <div class="p-6 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition">
-            <i data-lucide="sparkles" class="w-8 h-8 mx-auto text-amber-600 mb-3"></i>
-            <h4 class="font-bold text-sm text-gray-900">Limpieza Diaria de pasillos</h4>
-          </div>
-          <div class="p-6 text-center rounded-2xl bg-amber-50/50 border border-amber-100 hover:bg-amber-50 transition">
-            <i data-lucide="camera" class="w-8 h-8 mx-auto text-amber-600 mb-3"></i>
-            <h4 class="font-bold text-sm text-gray-900">Seguridad de cámaras</h4>
-          </div>
-          <div class="p-6 text-center rounded-2xl bg-amber-50/50 border border-amber-300 hover:bg-amber-50 transition">
-            <img src="./img/hotel.png" alt="Hotel Granaderos" class="rounded-2xl shadow-xl border border-amber-100 object-cover w-full h-80 sm:h-96">
-          </div>
+
         </div>
       </div>
     </section>
-        
+            
     <!-- UBICACIÓN -->
     <section id="ubicacion" class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
