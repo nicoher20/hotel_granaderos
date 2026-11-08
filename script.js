@@ -22,29 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Manejo del formulario de reserva enviado hacia WhatsApp
+  // Manejo del formulario de consulta enviado hacia WhatsApp
   const formReserva = document.getElementById("form-reserva");
 
   if (formReserva) {
     formReserva.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const inputs = formReserva.querySelectorAll("input, select");
-      const nombre = inputs[0].value.trim();
-      const telefono = inputs[1].value.trim();
-      const habitacion = inputs[2].value;
-      const checkIn = inputs[3].value;
-      const checkOut = inputs[4].value;
+      // Mensaje fijo para WhatsApp
+      const mensaje = "Hola Hotel Granaderos! Me gustaría consultar disponibilidad para alguna habitación.";
 
-      // Mensaje estructurado para WhatsApp
-      const mensaje = `Hola Hotel Granaderos! Me gustaría consultar disponibilidad para alguna habitación:\n\n` +
-        `• *Nombre:* ${nombre}\n` +
-        `• *Contacto:* ${telefono}\n` +
-        `• *Habitación:* ${habitacion}\n` +
-        `• *Check-in:* ${checkIn}\n` +
-        `• *Check-out:* ${checkOut}`;
-
-      const numeroWhatsApp = "5491130823712";
+      // Número de WhatsApp oficial del hotel
+      const numeroWhatsApp = "5491130823712"; 
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
       window.open(url, "_blank");
