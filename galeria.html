@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Hotel Granaderos</title>
+  <!-- Tailwind CSS CDN para estilos responsivos y modernos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-amber-50/30 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-amber-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white shadow-md">
+          <i data-lucide="hotel" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold font-serif text-gray-900 tracking-tight block leading-none">Hotel Granaderos</span>
+        </div>
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="index.html#nosotros" class="text-gray-600 hover:text-amber-600 transition">Nosotros</a>
+        <a href="index.html#ubicacion" class="text-gray-600 hover:text-amber-600 transition">Ubicación</a>
+        <a href="galeria.html" class="text-amber-600 font-semibold transition">Galería</a>
+      </nav>
+
+      <a href="https://wa.me/5491130823712?text=Hola%20Hotel%20Granaderos,%20me%20gustaría%20consultar%20disponibilidad%20para%20una%20reserva." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-amber-600 text-white font-medium hover:bg-amber-700 transition shadow-md hover:shadow-lg text-sm">
+        Consultar Ahora
+      </a>
+
+      <!-- Botón Menú Móvil -->
+      <button id="btn-menu" class="md:hidden p-2 rounded-lg text-gray-600 hover:text-amber-600 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-amber-100 bg-white px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html#nosotros" class="mobile-link block text-gray-600 py-1">Nosotros</a>
+      <a href="index.html#ubicacion" class="mobile-link block text-gray-600 py-1">Ubicación</a>
+      <a href="galeria.html" class="mobile-link block text-amber-800 font-medium py-1">Galería</a>
+      <a href="https://wa.me/5491130823712?text=Hola%20Hotel%20Granaderos,%20me%20gustaría%20consultar%20disponibilidad%20para%20una%20reserva." target="_blank" rel="noopener noreferrer" class="block text-center px-4 py-2.5 rounded-xl bg-amber-600 text-white font-medium">
+        Consultar Ahora
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- SECCIÓN BANNER SUPERIOR (Inspirada en el modelo de referencia) -->
+    <section class="relative bg-amber-900 py-16 sm:py-24 text-white overflow-hidden">
+      <div class="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style="background-image: url('./img/hotel.png');"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl sm:text-5xl font-serif font-bold tracking-tight mb-3">Galería</h1>
+        <p class="text-amber-200 text-sm sm:text-base max-w-lg mx-auto">Conocé nuestras instalaciones y espacios pensados para tu comodidad.</p>
+      </div>
+    </section>
+
+    <!-- CUADRÍCULA DE FOTOS DEL HOTEL -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-gray-900">Fotos del Hotel</h2>
+          <div class="w-16 h-1 bg-amber-600 mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <!-- Grid de imágenes adaptable -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          
+          <!-- Imagen 1 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 2 (Puedes reemplazar las rutas por tus fotos reales en la carpeta /img) -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 3 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 4 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 5 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 6 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 7 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+          <!-- Imagen 8 -->
+          <div class="group relative overflow-hidden rounded-2xl shadow-md border border-amber-100 bg-amber-50 aspect-[4/3]">
+            <img src="./img/?" alt="?" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div>
+        <h3 class="text-white font-serif font-bold text-lg">Hotel Granaderos</h3>
+        <p class="text-xs text-gray-500 mt-1">Granaderos 718</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script interactivo principal -->
+  <script src="script.js"></script>
+</body>
+</html>
